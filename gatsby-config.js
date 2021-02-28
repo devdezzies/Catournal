@@ -26,7 +26,8 @@ module.exports = {
     {
         resolve: 'gatsby-source-prismic-graphql',
         options: {
-            repositoryName: 'prist', // (REQUIRED, replace with your own)
+            repositoryName: 'schatten', // (REQUIRED, replace with your own)
+            accessToken: 'MC5ZRGRUb1JFQUFDQUFPbnRT.Ee-_ve-_vW8l77-977-977-9R--_ve-_ve-_vQbvv70f77-9QhkQEQUmQ--_ve-_ve-_ve-_vQ4UWu-_vWg',
             linkResolver: () => post => `/${post.uid}`,
         }
     },
@@ -46,7 +47,7 @@ module.exports = {
     {
         resolve: `gatsby-plugin-google-analytics`,
         options: {
-            trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+            trackingId: "UA-190324186-1",
             head: true,
         },
     },
