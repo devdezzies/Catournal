@@ -37,8 +37,8 @@ module.exports = {
         name: `gatsby-prismic-starter-prist`,
         short_name: `prist`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#6f9bfa`,
+        theme_color: `#6f9bfa`,
         display: `minimal-ui`,
         icon: `src/images/oscar-icon.png`, // This path is relative to the root of the site.
       },
