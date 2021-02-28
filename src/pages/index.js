@@ -96,7 +96,7 @@ const WorkAction = styled(Link)`
 const RenderBody = ({ home, projects, meta }) => (
     <>
         <Helmet
-            title={meta.title}
+            title={`Hello welcome to Catournal`}
             titleTemplate={`%s | Catournal`}
             meta={[
                 {

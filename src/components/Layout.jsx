@@ -9,6 +9,7 @@ import dimensions from "styles/dimensions";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import 'styles/fonts.scss';
+import { Helmet } from "react-helmet";
 
 const LayoutContainer = styled.div`
     max-width: ${dimensions.maxwidthDesktop}px;
@@ -32,6 +33,10 @@ const LayoutContainer = styled.div`
 `;
 
 const Layout = ({ children }) => (
+   <> 
+   <Helmet>
+      <script>{`(function(w, d) { w.CollectId = "603127aae9cf8d150b3ac50a"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);`}</script>
+    </Helmet>
     <StaticQuery
         query={graphql`
             query SiteTitleQuery {
@@ -55,6 +60,7 @@ const Layout = ({ children }) => (
             </LayoutContainer>
         )}
     />
+   </>
 )
 
 Layout.propTypes = {

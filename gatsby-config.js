@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Software Developer`,
-        description: `A starter powered by Gatsby and Prismic to showcase portfolios and blogs.`,
+        description: `Hello, Im Abdullah a software developer. Im a writer, podcaster, content creator and Coder`,
     author: `Abdullah | Catournal.site`,
   },
   plugins: [
