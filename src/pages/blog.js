@@ -6,6 +6,7 @@ import styled from "@emotion/styled";
 import dimensions from "styles/dimensions";
 import Layout from "components/Layout";
 import PostCard from "components/PostCard";
+import Podcast from "../components/Podcast";
 
 const BlogTitle = styled("h1")`
     margin-bottom: 1em;
@@ -71,6 +72,7 @@ const Blog = ({ posts, meta }) => (
             <BlogTitle>
                 Blog
             </BlogTitle>
+            <Podcast  />
             <BlogGrid>
                 {posts.map((post, i) => (
                     <PostCard
