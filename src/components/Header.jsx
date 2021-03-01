@@ -18,13 +18,13 @@ const HeaderContent = styled("div")`
 const HeaderLinks = styled("div")`
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-gap: 2em;
+    grid-gap: 3em;
     justify-content: flex-end;
     width: 100%;
     max-width: 200px;
 
     @media(max-width: ${dimensions.maxwidthTablet}px) {
-        grid-gap: 5.5em;
+        grid-gap: 2em;
     }
 
     @media(max-width: ${dimensions.maxwidthMobile}px) {
