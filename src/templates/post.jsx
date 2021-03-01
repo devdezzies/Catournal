@@ -159,12 +159,14 @@ const Post = ({ post, meta }) => {
                 )}
                 <PostBody>
                     {RichText.render(post.post_body)}
-                </PostBody>
-                <br />
-                <Disqus
+                    <br />
+                    <Disqus
                     title={post.post_title}
                     url={`/${post.uid}`}
                 />
+                </PostBody>
+                
+                
             </Layout>
         </>
     )
