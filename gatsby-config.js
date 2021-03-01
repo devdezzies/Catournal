@@ -32,6 +32,14 @@ module.exports = {
         }
     },
     {
+
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `catournal`
+
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-prismic-starter-prist`,

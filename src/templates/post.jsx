@@ -7,6 +7,7 @@ import { RichText } from "prismic-reactjs";
 import styled from "@emotion/styled";
 import colors from "styles/colors";
 import Layout from "components/Layout";
+import Disqus from 'gatsby-plugin-disqus';
 
 const PostHeroContainer = styled("div")`
     max-height: 500px;
@@ -96,7 +97,7 @@ const Post = ({ post, meta }) => {
     return (
         <>
             <Helmet
-                title={`${post.post_title[0].text} | Prist, Gatsby & Prismic Starter`}
+                title={`${post.post_title[0].text} | Catournal`}
                 titleTemplate={`%s | ${meta.title}`}
                 meta={[
                     {
@@ -105,7 +106,7 @@ const Post = ({ post, meta }) => {
                     },
                     {
                         property: `og:title`,
-                        content: `${post.post_title[0].text} | Prist, Gatsby & Prismic Starter`,
+                        content: `${post.post_title[0].text} | Catournal`,
                     },
                     {
                         property: `og:description`,
@@ -148,7 +149,7 @@ const Post = ({ post, meta }) => {
                         <Moment format="MMMM D, YYYY">{post.post_date}</Moment>
                     </PostDate>
                 </PostMetas>
-                    {post.post_hero_image && (
+                {post.post_hero_image && (
                     <PostHeroContainer>
                         <img src={post.post_hero_image.url} alt="bees" />
                         <PostHeroAnnotation>
@@ -159,6 +160,11 @@ const Post = ({ post, meta }) => {
                 <PostBody>
                     {RichText.render(post.post_body)}
                 </PostBody>
+                <br />
+                <Disqus
+                    title={post.post_title}
+                    url={`/${post.uid}`}
+                />
             </Layout>
         </>
     )
@@ -168,7 +174,7 @@ export default ({ data }) => {
     const postContent = data.prismic.allPosts.edges[0].node;
     const meta = data.site.siteMetadata;
     return (
-        <Post post={postContent} meta={meta}/>
+        <Post post={postContent} meta={meta} />
     )
 }
 
