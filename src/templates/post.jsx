@@ -8,6 +8,8 @@ import styled from "@emotion/styled";
 import colors from "styles/colors";
 import Layout from "components/Layout";
 import Disqus from 'gatsby-plugin-disqus';
+import Button from "components/_ui/Button";
+import { Link } from 'gatsby';
 
 const PostHeroContainer = styled("div")`
     max-height: 500px;
@@ -72,6 +74,13 @@ const PostBody = styled("div")`
             width: 100%;
         }
     }
+`
+
+const WorkLink = styled(Link)`
+    margin-top: 3em;
+    display: block;
+    text-align: center;
+    margin-bottom: 3em;
 `
 
 const PostMetas = styled("div")`
@@ -160,13 +169,19 @@ const Post = ({ post, meta }) => {
                 <PostBody>
                     {RichText.render(post.post_body)}
                     <br />
+                    <WorkLink to={"/blog"}>
+                        <Button className="Button--secondary">
+                            Explore Other Blogs
+                        </Button>
+                    </WorkLink>
+                    <br />
                     <Disqus
-                    title={post.post_title}
-                    url={`/${post.uid}`}
-                />
+                        title={post.post_title}
+                        url={`/${post.uid}`}
+                    />
                 </PostBody>
-                
-                
+
+
             </Layout>
         </>
     )
