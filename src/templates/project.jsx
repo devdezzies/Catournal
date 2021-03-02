@@ -30,7 +30,7 @@ const ProjectTitle = styled("div") `
 `
 
 const ProjectBody = styled("div")`
-    max-width: 550px;
+    max-width: 780px;
     margin: 0 auto;
 
     .block-img {

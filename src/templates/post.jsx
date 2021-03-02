@@ -63,7 +63,7 @@ const PostTitle = styled("div")`
 `
 
 const PostBody = styled("div")`
-    max-width: 550px;
+    max-width: 780px;
     margin: 0 auto;
 
     .block-img {
@@ -174,7 +174,6 @@ const Post = ({ post, meta }) => {
                             Explore Other Blogs
                         </Button>
                     </WorkLink>
-                    <br />
                     <Disqus
                         title={post.post_title}
                         url={`/${post.uid}`}
