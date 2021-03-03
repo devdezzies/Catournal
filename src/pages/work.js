@@ -5,6 +5,8 @@ import { graphql } from "gatsby";
 import styled from "@emotion/styled";
 import Layout from "components/Layout";
 import ProjectCard from "components/ProjectCard";
+import Chartboxdata from "../components/Chart/Chartbox";
+
 
 const WorkTitle = styled("h1")`
     margin-bottom: 1em;
@@ -54,6 +56,8 @@ const Work = ({ projects, meta }) => (
             <WorkTitle>
                 Work
             </WorkTitle>
+            <br />
+            <Chartboxdata />
             <>
                 {projects.map((project, i) => (
                     <ProjectCard

@@ -7,6 +7,8 @@
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.12",
+    "axios": "^0.21.1",
+    "chart.js": "^2.9.4",
     "gatsby": "^2.12.0",
     "gatsby-image": "^2.2.20",
     "gatsby-plugin-catch-links": "^2.0.12",
@@ -24,6 +26,7 @@
     "gatsby-source-prismic-graphql": "npm:@prismicio/gatsby-source-prismic-graphql@^3.6.13",
     "gatsby-transformer-sharp": "^2.2.16",
     "node-sass": "^4.12.0",
+    "primereact": "^6.0.2",
     "prismic-reactjs": "^1.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
