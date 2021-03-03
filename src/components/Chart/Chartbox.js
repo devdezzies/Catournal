@@ -1,13 +1,13 @@
 import React from 'react'
-import RadarChartDemo from './Chartradar'
+import DoughnutChartDemo from './Chartradar'
+
 
 const Chartboxdata = () => {
-    return(
+    return (
         <div style={{
-            marginBottom: '100px'
-  
+            marginBottom: '100px',
         }} className="demo-data-chartes">
-            <RadarChartDemo />
+            <DoughnutChartDemo />
         </div>
 
     )

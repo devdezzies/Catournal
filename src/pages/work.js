@@ -8,6 +8,7 @@ import ProjectCard from "components/ProjectCard";
 import Chartboxdata from "../components/Chart/Chartbox";
 
 
+
 const WorkTitle = styled("h1")`
     margin-bottom: 1em;
 `
@@ -56,6 +57,7 @@ const Work = ({ projects, meta }) => (
             <WorkTitle>
                 Work
             </WorkTitle>
+
             <br />
             <Chartboxdata />
             <>
