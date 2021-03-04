@@ -58,8 +58,8 @@ const WorkLink = styled(Link)`
 const Project = ({ project, meta }) => {
 
     let gitalkConfig = {
-        id : location.pathname,
-        title: project.project_title,
+        id : `${project.project_title[0].text}`,
+        title: 'project.project_title',
       }
 
     return (
