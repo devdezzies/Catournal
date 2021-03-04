@@ -106,7 +106,7 @@ const PostDate = styled("div")`
 
 const Post = ({ post, meta }) => {
     let gitalkConfig = {
-
+        id: `https://catournal.site/blog/${post.uid}`,
         title: post.title,
       }
 
