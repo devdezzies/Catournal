@@ -48,7 +48,7 @@ module.exports = {
           repo: 'Catournal',
           owner: 'devdezzies',
           admin: ['devdezzies'],
-        
+          id: `https://catournal.site/blog/${post.uid}`
         }
 
       }
