@@ -107,7 +107,7 @@ const PostDate = styled("div")`
 const Post = ({ post, meta }) => {
     let gitalkConfig = {
         id: post.slug || post.id,
-        title: post.post_title,
+        title: post.title,
       }
 
     return (
