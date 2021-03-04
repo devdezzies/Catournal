@@ -10,8 +10,7 @@ import Layout from "components/Layout";
 import Disqus from 'gatsby-plugin-disqus';
 import Button from "components/_ui/Button";
 import { Link } from 'gatsby';
-import Gitalk from 'gatsby-plugin-gitalk';
-import '@suziwen/gitalk/dist/gitalk.css';
+
 
 const PostHeroContainer = styled("div")`
     max-height: 500px;
@@ -105,11 +104,6 @@ const PostDate = styled("div")`
 `
 
 const Post = ({ post, meta }) => {
-    let gitalkConfig = {
-        id: `https://catournal.site/blog/${post.uid}`,
-        title: post.title,
-      }
-
     return (
         <>
             <Helmet
@@ -185,7 +179,6 @@ const Post = ({ post, meta }) => {
                         title={post.post_title}
                         url={`/${post.uid}`}
                     />
-                    <Gitalk options={gitalkConfig}/>
                 </PostBody>
 
 

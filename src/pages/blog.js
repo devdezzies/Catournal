@@ -6,6 +6,8 @@ import styled from "@emotion/styled";
 import dimensions from "styles/dimensions";
 import Layout from "components/Layout";
 import PostCard from "components/PostCard";
+import Applikasi from "../components/Gitalk/Talkingwithgitalk";
+
 //import Podcast from "../components/Podcast";
 
 const BlogTitle = styled("h1")`
@@ -72,6 +74,7 @@ const Blog = ({ posts, meta }) => (
             <BlogTitle>
                 Blog
             </BlogTitle>
+            <Applikasi />
             <BlogGrid>
                 {posts.map((post, i) => (
                     <PostCard

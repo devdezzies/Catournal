@@ -48,7 +48,7 @@ module.exports = {
           repo: 'Catournal',
           owner: 'devdezzies',
           admin: ['devdezzies'],
-          id: 'https://www.catournal.site/blog/mengeliminasi-distraksi-dengan-social-media-detox'
+          
         }
 
       }
