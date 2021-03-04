@@ -26,6 +26,7 @@
     "gatsby-source-graphql-universal": "^3.3.0",
     "gatsby-source-prismic-graphql": "npm:@prismicio/gatsby-source-prismic-graphql@^3.6.13",
     "gatsby-transformer-sharp": "^2.2.16",
+    "jsdom": "^16.4.0",
     "node-sass": "^4.12.0",
     "primereact": "^6.0.2",
     "prismic-reactjs": "^1.1.1",
