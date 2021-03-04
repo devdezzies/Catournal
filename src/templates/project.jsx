@@ -116,6 +116,7 @@ const Project = ({ project, meta }) => {
                         repo: 'Catournal',
                         owner: 'devdezzies',
                         admin: ['devdezzies'],
+                        title: 'project.project_title',
                         id: `/${project.uid}`
                     }} />       
                 </ProjectBody>            
