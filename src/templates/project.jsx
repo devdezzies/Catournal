@@ -7,8 +7,7 @@ import { Link, graphql } from 'gatsby';
 import { RichText } from "prismic-reactjs";
 import Button from "components/_ui/Button";
 import Layout from "components/Layout";
-import Gitalk from 'gatsby-plugin-gitalk';
-import '@suziwen/gitalk/dist/gitalk.css';
+
 
 
 
@@ -56,12 +55,6 @@ const WorkLink = styled(Link)`
 
 
 const Project = ({ project, meta }) => {
-
-    let gitalkConfig = {
-        id : `${project.project_title}`,
-        title: `${project.project_title}`,
-      }
-
     return (
         <>
             <Helmet
@@ -118,7 +111,6 @@ const Project = ({ project, meta }) => {
                             See other works
                         </Button>
                     </WorkLink> 
-                    <Gitalk options={gitalkConfig}/>
                 </ProjectBody>            
             </Layout>
         </>
