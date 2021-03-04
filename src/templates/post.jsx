@@ -106,7 +106,7 @@ const PostDate = styled("div")`
 
 const Post = ({ post, meta }) => {
     let gitalkConfig = {
-        id : `/${post.uid}`,
+        id: post.slug || post.id,
         title: post.post_title,
       }
 
