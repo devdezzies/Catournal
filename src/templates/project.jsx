@@ -58,7 +58,6 @@ const WorkLink = styled(Link)`
 const Project = ({ project, meta }) => {
 
     let gitalkConfig = {
-        id: project.slug || project.id,
         title: project.project_title,
       }
 
