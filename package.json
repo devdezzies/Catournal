@@ -28,6 +28,7 @@
     "gatsby-transformer-sharp": "^2.2.16",
     "jsdom": "^16.4.0",
     "node-sass": "^4.12.0",
+    "patch-package": "^6.4.5",
     "primereact": "^6.0.2",
     "prismic-reactjs": "^1.1.1",
     "prop-types": "^15.7.2",
@@ -61,7 +62,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "postinstall": "patch-package"
   },
   "repository": {
     "type": "git",

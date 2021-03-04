@@ -7,8 +7,6 @@ const styles = {
 
 export default class newes extends Component {
     render() {
-
-        if (typeof (document) !== "undefined") {
             return (
                 <div style={styles}>
                     <Plyr
@@ -17,9 +15,6 @@ export default class newes extends Component {
                     />
                     <h2>Start editing to see some magic happens {"\u2728"}</h2>
                 </div>
-            )
-        } else {
-            return (<></>)
-        }
+                )
     }
 }
