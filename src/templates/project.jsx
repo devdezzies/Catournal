@@ -7,6 +7,9 @@ import { Link, graphql } from 'gatsby';
 import { RichText } from "prismic-reactjs";
 import Button from "components/_ui/Button";
 import Layout from "components/Layout";
+import Gitalk from 'gatsby-plugin-gitalk';
+import '@suziwen/gitalk/dist/gitalk.css';
+
 
 const ProjectHeroContainer = styled("div")`
     background: ${colors.grey200};
@@ -104,10 +107,13 @@ const Project = ({ project, meta }) => {
                     {RichText.render(project.project_description)}
                     <WorkLink to={"/work"}>
                         <Button className="Button--secondary">
-                            See other work
+                            See other works
                         </Button>
-                    </WorkLink>
-                </ProjectBody>
+                    </WorkLink> 
+                    <Gitalk options={{
+                        title: "project.project_title"
+                    }} />                 
+                </ProjectBody>            
             </Layout>
         </>
     )
