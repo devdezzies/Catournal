@@ -39,6 +39,7 @@ const Newes = () => {
             <Plyr
                 type="video"
                 poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"
+                showPosterOnEnd="true"
                 url="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
             />
             <WorkLink to={"/blog"}>
