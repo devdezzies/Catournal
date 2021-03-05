@@ -6,6 +6,7 @@ import styled from "@emotion/styled";
 import Layout from "components/Layout";
 import ProjectCard from "components/ProjectCard";
 import Chartboxdata from "../components/Chart/Chartbox";
+import App from "../components/Gitalk/Nowe";
 
 
 
@@ -57,7 +58,7 @@ const Work = ({ projects, meta }) => (
             <WorkTitle>
                 Work
             </WorkTitle>
-
+            <App />
             <br />
             <Chartboxdata />
             <>
