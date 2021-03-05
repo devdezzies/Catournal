@@ -6,7 +6,7 @@ import styled from "@emotion/styled";
 import dimensions from "styles/dimensions";
 import Layout from "components/Layout";
 import PostCard from "components/PostCard";
-import newes from "../components/Gitalk/newes";
+import Newes from "../components/Gitalk/newes";
 
 
 //import Podcast from "../components/Podcast";
@@ -75,7 +75,7 @@ const Blog = ({ posts, meta }) => (
             <BlogTitle>
                 Blog
             </BlogTitle>
-            <newes />
+            <Newes />
             <BlogGrid>
                 {posts.map((post, i) => (
                     <PostCard
