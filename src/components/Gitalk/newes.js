@@ -24,11 +24,11 @@ const Newes = () => {
     return (
         <div style={styles}>
         <Helmet>
-        <link rel="stylesheet" href="https://cdn.plyr.io/1.8.1/plyr.css"/>
+            <link rel="stylesheet" href="https://cdn.plyr.io/2.0.18/plyr.css"/>
         </Helmet>
             <Plyr
                 type="video"
-                url="https://assets.mixkit.co/videos/preview/mixkit-waves-crash-on-a-shore-with-boulders-1088-large.mp4"
+                url="https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/Big_Buck_Bunny_4K.webm/Big_Buck_Bunny_4K.webm.480p.webm"
             />
             <h2>Start editing to see some magic happens {"\u2728"}</h2>
         </div>
