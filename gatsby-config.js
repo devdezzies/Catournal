@@ -40,20 +40,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-gitalk`,
-      options: {
-        config: {
-          clientID: 'f85b318174d1844299f8',
-          clientSecret: '3886354ab1b21929a6250d3dcee71cf66386278d',
-          repo: 'Catournal',
-          owner: 'devdezzies',
-          admin: ['devdezzies'],
-          
-        }
-
-      }
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-prismic-starter-prist`,

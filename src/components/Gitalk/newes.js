@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import Button from '../_ui/Button';
 import styled from "@emotion/styled";
 import { Link } from 'gatsby';
+import "./Plyr.css";
 const styles = {
     fontFamily: "sans-serif",
     textAlign: "center"
@@ -44,7 +45,7 @@ const Newes = () => {
             />
             <WorkLink to={"/blog"}>
                 <Button className="Button--secondary">
-                    Hi! Do you interesting about this? watch more {'\u2728'}
+                    Hi! Are you interested in this? watch more {'\u2728'}
                 </Button>
             </WorkLink>
         </div>
