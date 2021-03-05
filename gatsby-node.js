@@ -91,7 +91,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
         module: {
           rules: [
             {
-              test: /plyr-react/,
+              test: /react-plyr/,
               use: loaders.null(),
             },
           ],
