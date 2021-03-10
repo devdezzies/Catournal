@@ -10,6 +10,7 @@ import Layout from "components/Layout";
 import Disqus from 'gatsby-plugin-disqus';
 import Button from "components/_ui/Button";
 import { Link } from 'gatsby';
+import Newschimp from '../components/Newsletter/Newschimp';
 
 
 const PostHeroContainer = styled("div")`
@@ -175,6 +176,7 @@ const Post = ({ post, meta }) => {
                             Explore Other Blogs
                         </Button>
                     </WorkLink>
+                    <Newschimp/>
                     <Disqus
                         title={post.post_title}
                         url={`/${post.uid}`}

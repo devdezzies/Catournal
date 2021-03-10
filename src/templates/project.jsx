@@ -7,6 +7,7 @@ import { Link, graphql } from 'gatsby';
 import { RichText } from "prismic-reactjs";
 import Button from "components/_ui/Button";
 import Layout from "components/Layout";
+import Newschimp from '../components/Newsletter/Newschimp';
 
 
 
@@ -111,6 +112,7 @@ const Project = ({ project, meta }) => {
                             See other work
                         </Button>
                     </WorkLink> 
+                    <Newschimp/>
                 </ProjectBody>            
             </Layout>
         </>
