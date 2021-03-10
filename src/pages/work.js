@@ -2,17 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import styled from "@emotion/styled";
 import Layout from "components/Layout";
 import ProjectCard from "components/ProjectCard";
-import Chartboxdata from "../components/Chart/Chartbox";
+//import Chartboxdata from "../components/Chart/Chartbox";
 
 
 
 
-const WorkTitle = styled("h1")`
-    margin-bottom: 1em;
-`
+
 
 const Work = ({ projects, meta }) => (
     <>
@@ -55,11 +52,7 @@ const Work = ({ projects, meta }) => (
             ].concat(meta)}
         />
         <Layout>
-            <WorkTitle>
-                Work
-            </WorkTitle>
             <br />
-            <Chartboxdata />
             <>
                 {projects.map((project, i) => (
                     <ProjectCard

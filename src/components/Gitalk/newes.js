@@ -17,7 +17,7 @@ const WorkLink = styled(Link)`
     margin-bottom: 3em;
 `
 
-const Newes = () => {
+const Newes = (props) => {
 
     const [
         hasmounted,
@@ -38,19 +38,27 @@ const Newes = () => {
                 <link rel="stylesheet" href="https://cdn.plyr.io/2.0.18/plyr.css" />
             </Helmet>
             <Plyr
-                type="video"
-                poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"
+                type={props.type}
+                poster={props.poster}
                 showPosterOnEnd="true"
-                url="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
+                url={props.url}
+                videoId={props.id}
             />
-            <WorkLink to={"/blog"}>
+            <WorkLink to={"/catdeo"}>
                 <Button className="Button--secondary">
-                    Hi! Are you interested in this? watch more {'\u2728'}
+                    {props.button}
                 </Button>
             </WorkLink>
         </div>
     )
 }
+
+Newes.defaultProps = {
+    type: "video",
+    poster: "https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg",
+    button: "Hi Are You Interested In This? watch more \u2728"
+}
+
 
 export default Newes
 

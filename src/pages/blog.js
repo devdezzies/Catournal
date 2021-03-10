@@ -12,9 +12,7 @@ import Newes from "../components/Gitalk/newes";
 
 //import Podcast from "../components/Podcast";
 
-const BlogTitle = styled("h1")`
-    margin-bottom: 1em;
-`
+
 
 const BlogGrid = styled("div")`
     display: grid;
@@ -73,10 +71,7 @@ const Blog = ({ posts, meta }) => (
             ].concat(meta)}
         />
         <Layout>
-            <BlogTitle>
-                Blog
-            </BlogTitle>
-            <Newes />
+            <Newes url="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"/>
             <BlogGrid>
                 {posts.map((post, i) => (
                     <PostCard
