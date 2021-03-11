@@ -14,12 +14,14 @@ const subContainerStyle = `
 const subInputStyle = `
       border-width: 0;
       margin: 0;
+      outline: none;
     `;
 const subButtonStyle = `
       border-radius: 0;
       flex-grow: 1;
       background-color: #fdfdfd;
       color: #000000;
+      outline: none;
     `;
 
 const Newschimp = () => (
