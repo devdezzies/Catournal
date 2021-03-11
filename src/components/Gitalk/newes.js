@@ -44,7 +44,7 @@ const Newes = (props) => {
                 url={props.url}
                 videoId={props.id}
             />
-            <WorkLink to={"/catdeo"}>
+            <WorkLink to={"/blog"}>
                 <Button className="Button--secondary">
                     {props.button}
                 </Button>
@@ -56,7 +56,7 @@ const Newes = (props) => {
 Newes.defaultProps = {
     type: "video",
     poster: "https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg",
-    button: "Hi Are You Interested In This? watch mores \u2728"
+    button: "Hi Are You Interested In This? watch moresr \u2728"
 }
 
 

@@ -71,7 +71,7 @@ const Blog = ({ posts, meta }) => (
             ].concat(meta)}
         />
         <Layout>
-            <Newes url="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"/>
+            <Newes type="youtube" id="f080IGBQiaM"/>
             <BlogGrid>
                 {posts.map((post, i) => (
                     <PostCard
