@@ -29,7 +29,7 @@ module.exports = {
           clientSecret: '5d65e860cdfce8ae6d7e3e18bbffc64275e9d4e3',
           repo: 'Catournal',
           owner: 'devdezzies',
-          admin: ['devdezzies']
+          admin: ['devdezzies'],
         }
       }
     },
@@ -42,14 +42,6 @@ module.exports = {
             accessToken: 'MC5ZRGRUb1JFQUFDQUFPbnRT.Ee-_ve-_vW8l77-977-977-9R--_ve-_ve-_vQbvv70f77-9QhkQEQUmQ--_ve-_ve-_ve-_vQ4UWu-_vWg',
             linkResolver: () => post => `/${post.uid}`,
         }
-    },
-    {
-
-      resolve: `gatsby-plugin-disqus`,
-      options: {
-        shortname: `catournal`
-
-      }
     },
     {
       resolve: `gatsby-plugin-manifest`,

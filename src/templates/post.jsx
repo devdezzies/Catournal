@@ -7,7 +7,6 @@ import { RichText } from "prismic-reactjs";
 import styled from "@emotion/styled";
 import colors from "styles/colors";
 import Layout from "components/Layout";
-import Disqus from 'gatsby-plugin-disqus';
 import { Link } from 'gatsby';
 import Newschimp from '../components/Newsletter/Newschimp';
 import dimensions from "styles/dimensions";
@@ -205,10 +204,6 @@ const Post = ({ post, meta }) => {
                         See more blog <span>&#8594;</span>
                     </WorkAction>
                     <Newschimp />
-                    <Disqus
-                        title={post.post_title}
-                        url={`/${post.uid}`}
-                    />
                     <Gitalk options={gitalkConfig}/>
                 </PostBody>
 
