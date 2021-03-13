@@ -7,7 +7,7 @@ const mailchimpURL = `https://site.us1.list-manage.com/subscribe/post?u=109ed362
 const outerCardStyle = `
       padding: 0;
       max-width: 100%;
-      width: 600px;
+      width: 550px;
       
     `;
 

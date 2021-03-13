@@ -10,6 +10,7 @@ import Button from "components/_ui/Button";
 import About from "components/About";
 import Layout from "components/Layout";
 import ProjectCard from "components/ProjectCard";
+import Newschimp from "../components/Newsletter/Newschimp";
 
 
 
@@ -162,6 +163,7 @@ const RenderBody = ({ home, projects, meta }) => (
                 See more work <span>&#8594;</span>
             </WorkAction>
         </Section>
+        <Newschimp/>
         <Section>
             {RichText.render(home.about_title)}
             <About

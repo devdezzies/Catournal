@@ -8,9 +8,9 @@ import styled from "@emotion/styled";
 import colors from "styles/colors";
 import Layout from "components/Layout";
 import Disqus from 'gatsby-plugin-disqus';
-import Button from "components/_ui/Button";
 import { Link } from 'gatsby';
 import Newschimp from '../components/Newsletter/Newschimp';
+import dimensions from "styles/dimensions";
 
 
 const PostHeroContainer = styled("div")`
@@ -78,13 +78,6 @@ const PostBody = styled("div")`
     }
 `
 
-const WorkLink = styled(Link)`
-    margin-top: 3em;
-    display: block;
-    text-align: center;
-    margin-bottom: 3em;
-`
-
 const PostMetas = styled("div")`
     max-width: 550px;
     margin: 0 auto;
@@ -102,6 +95,35 @@ const PostAuthor = styled("div")`
 
 const PostDate = styled("div")`
     margin: 0;
+`
+const WorkAction = styled(Link)`
+    font-weight: 600;
+    text-decoration: none;
+    color: currentColor;
+    transition: all 150ms ease-in-out;
+    margin-left: auto;
+
+    @media(max-width:${dimensions.maxwidthTablet}px) {
+       margin: 0 auto;
+    }
+
+    span {
+        margin-left: 1em;
+        transform: translateX(-8px);
+        display: inline-block;
+        transition: transform 400ms ease-in-out;
+    }
+
+    &:hover {
+        color: ${colors.blue500};
+        transition: all 150ms ease-in-out;
+
+        span {
+            transform: translateX(0px);
+            opacity: 1;
+            transition: transform 150ms ease-in-out;
+        }
+    }
 `
 
 const Post = ({ post, meta }) => {
@@ -171,12 +193,10 @@ const Post = ({ post, meta }) => {
                 <PostBody>
                     {RichText.render(post.post_body)}
                     <br />
-                    <WorkLink to={"/blog"}>
-                        <Button className="Button--secondary">
-                            Explore Other Blogs
-                        </Button>
-                    </WorkLink>
-                    <Newschimp/>
+                    <WorkAction to={"/work"}>
+                        See more blog <span>&#8594;</span>
+                    </WorkAction>
+                    <Newschimp />
                     <Disqus
                         title={post.post_title}
                         url={`/${post.uid}`}
