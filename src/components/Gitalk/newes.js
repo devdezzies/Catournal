@@ -56,7 +56,7 @@ const Newes = (props) => {
 Newes.defaultProps = {
     type: "video",
     poster: "https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg",
-    button: "Hi Are You Interested In This? watch moresr \u2728"
+    button: "Hi Are You Interested In This? watch more \u2728"
 }
 
 

@@ -12,6 +12,7 @@ import Layout from "components/Layout";
 import ProjectCard from "components/ProjectCard";
 
 
+
 const Hero = styled("div")`
     padding-top: 2.5em;
     padding-bottom: 3em;
