@@ -11,6 +11,8 @@ import Disqus from 'gatsby-plugin-disqus';
 import { Link } from 'gatsby';
 import Newschimp from '../components/Newsletter/Newschimp';
 import dimensions from "styles/dimensions";
+import Gitalk from 'gatsby-plugin-gitalk';
+import '@suziwen/gitalk/dist/gitalk.css';
 
 
 const PostHeroContainer = styled("div")`
@@ -127,6 +129,12 @@ const WorkAction = styled(Link)`
 `
 
 const Post = ({ post, meta }) => {
+
+    let gitalkConfig = {
+        id: `/${post.uid}`,
+        title: post.post_title,
+      }
+
     return (
         <>
             <Helmet
@@ -201,6 +209,7 @@ const Post = ({ post, meta }) => {
                         title={post.post_title}
                         url={`/${post.uid}`}
                     />
+                    <Gitalk options={gitalkConfig}/>
                 </PostBody>
 
 

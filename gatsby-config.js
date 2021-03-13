@@ -21,6 +21,18 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-gitalk`,
+      options: {
+        config: {
+          clientID: 'f85b318174d1844299f8',
+          clientSecret: '5d65e860cdfce8ae6d7e3e18bbffc64275e9d4e3',
+          repo: 'Catournal',
+          owner: 'devdezzies',
+          admin: ['devdezzies']
+        }
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
