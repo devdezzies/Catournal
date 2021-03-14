@@ -94,10 +94,6 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
               test: /react-plyr/,
               use: loaders.null(),
             },
-            {
-              test: /gitalk/,
-              use: loaders.null(),
-            },
           ],
         },
       })
