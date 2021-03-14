@@ -8,8 +8,8 @@ import { RichText } from "prismic-reactjs";
 import Button from "components/_ui/Button";
 import Layout from "components/Layout";
 import Newschimp from '../components/Newsletter/Newschimp';
-import '@suziwen/gitalk/dist/gitalk.css';
-import Gitalk from 'gatsby-plugin-gitalk';
+//import '@suziwen/gitalk/dist/gitalk.css';
+//import Gitalk from 'gatsby-plugin-gitalk';
 
 
 const ProjectHeroContainer = styled("div")`
@@ -56,10 +56,10 @@ const WorkLink = styled(Link)`
 
 const Project = ({ project, meta}) => {
 
-    let gitalkConfig = {
-        id: `${project.uid}`,
-        title: project.project_title[0]
-      }
+    //let gitalkConfig = {
+    //    id: `${project.uid}`,
+    //    title: project.project_title[0]
+    //  }
 
     return (
         <>
@@ -118,7 +118,7 @@ const Project = ({ project, meta}) => {
                         </Button>
                     </WorkLink>
                     <Newschimp />
-                    <Gitalk options={gitalkConfig}/>
+                    
                 </ProjectBody>
             </Layout>
         </>
