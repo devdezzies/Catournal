@@ -60,7 +60,7 @@ const WorkLink = styled(Link)`
 const Project = ({ project, meta }) => {
 
     let gitalkConfig = {
-        id: project.uid,
+        id: '/ably-anonym-comment-system',
         title: project.project_title,
       }
 
