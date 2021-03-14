@@ -58,7 +58,7 @@ const Project = ({ project, meta}) => {
 
     let gitalkConfig = {
         id: `${project.uid}`,
-        title: project.project_title,
+        
       }
 
     return (
