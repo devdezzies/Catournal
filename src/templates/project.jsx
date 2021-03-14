@@ -8,8 +8,9 @@ import { RichText } from "prismic-reactjs";
 import Button from "components/_ui/Button";
 import Layout from "components/Layout";
 import Newschimp from '../components/Newsletter/Newschimp';
-import Gitalk from 'gatsby-plugin-gitalk';
 import '@suziwen/gitalk/dist/gitalk.css';
+import Gitalk from 'gatsby-plugin-gitalk';
+
 
 
 
