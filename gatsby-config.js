@@ -42,7 +42,7 @@ module.exports = {
           repo: 'Catournal',
           owner: 'devdezzies',
           admin: ['devdezzies'],
-          accessToken: '69e7d15a7e2f294f8a0f0b0d9728f751540b7342'
+          accessToken: '78512f7e40343ca2b0b7f673e1f53a06f6df32f3'
           
         }
 
