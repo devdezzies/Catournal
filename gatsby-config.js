@@ -42,7 +42,7 @@ module.exports = {
           repo: 'Catournal',
           owner: 'devdezzies',
           admin: ['devdezzies'],
-          proxy: ''
+          
           
         }
 
