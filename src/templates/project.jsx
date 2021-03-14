@@ -8,8 +8,10 @@ import { RichText } from "prismic-reactjs";
 import Button from "components/_ui/Button";
 import Layout from "components/Layout";
 import Newschimp from '../components/Newsletter/Newschimp';
-import Gitalk from 'gatsby-plugin-gitalk';
-import '@suziwen/gitalk/dist/gitalk.css';
+import 'gitalk/dist/gitalk.css';
+import GitalkComponent from "gitalk/dist/gitalk-component";
+
+
 
 
 
@@ -30,7 +32,7 @@ const ProjectHeroContainer = styled("div")`
     }
 `
 
-const ProjectTitle = styled("div") `
+const ProjectTitle = styled("div")`
     max-width: 550px;
     margin: 0 auto;
     text-align: center;
@@ -58,11 +60,6 @@ const WorkLink = styled(Link)`
 
 
 const Project = ({ project, meta }) => {
-
-    let gitalkConfig = {
-        id: project.id,
-        title: project.project_title,
-      }
 
     return (
         <>
@@ -119,10 +116,17 @@ const Project = ({ project, meta }) => {
                         <Button className="Button--secondary">
                             See other work
                         </Button>
-                    </WorkLink> 
-                    <Newschimp/>
-                    <Gitalk options={gitalkConfig}/>
-                </ProjectBody>            
+                        <GitalkComponent options={{
+                            clientID: 'b97ab9918667c01272c3',
+                            clientSecret: 'c3226abf1bff0657384bdbcf871873acfb36a274',
+                            repo: 'Catournal',
+                            owner: 'devdezzies',
+                            admin: ['devdezzies'],
+                            id: 'project.uid'
+                        }} />
+                    </WorkLink>
+                    <Newschimp />
+                </ProjectBody>
             </Layout>
         </>
     )
@@ -132,7 +136,7 @@ export default ({ data }) => {
     const projectContent = data.prismic.allProjects.edges[0].node;
     const meta = data.site.siteMetadata;
     return (
-        <Project project={projectContent} meta={meta}/>
+        <Project project={projectContent} meta={meta} />
     )
 }
 
