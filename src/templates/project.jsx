@@ -12,13 +12,6 @@ import '@suziwen/gitalk/dist/gitalk.css';
 import Gitalk from 'gatsby-plugin-gitalk';
 
 
-
-
-
-
-
-
-
 const ProjectHeroContainer = styled("div")`
     background: ${colors.grey200};
     display: flex;
@@ -124,8 +117,8 @@ const Project = ({ project, meta}) => {
                             See other work
                         </Button>
                     </WorkLink>
-                    <Gitalk options={gitalkConfig}/>
                     <Newschimp />
+                    <Gitalk options={gitalkConfig}/>
                 </ProjectBody>
             </Layout>
         </>
