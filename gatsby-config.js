@@ -42,6 +42,7 @@ module.exports = {
           repo: 'Catournal',
           owner: 'devdezzies',
           admin: ['devdezzies'],
+          proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/devdezzies/oauth/fcdfe12ebd50f180b2d8f2e8753d92259fe0732d'
           
         }
 
