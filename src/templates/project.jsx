@@ -60,8 +60,8 @@ const WorkLink = styled(Link)`
 const Project = ({ project, meta }) => {
 
     let gitalkConfig = {
-        id: project.id,
-        title: project.title,
+        id: project.uid,
+        title: project.project_title,
       }
 
     return (

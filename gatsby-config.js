@@ -41,7 +41,8 @@ module.exports = {
           clientSecret: 'c3226abf1bff0657384bdbcf871873acfb36a274',
           repo: 'Catournal',
           owner: 'devdezzies',
-          admin: ['devdezzies']
+          admin: ['devdezzies'],
+          
         }
 
       }
