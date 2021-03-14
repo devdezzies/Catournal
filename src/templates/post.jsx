@@ -194,7 +194,7 @@ const Post = ({ post, meta }) => {
                 <PostBody>
                     {RichText.render(post.post_body)}
                     <br />
-                    <WorkAction to={"/work"}>
+                    <WorkAction to={"/blog"}>
                         See more blog <span>&#8594;</span>
                     </WorkAction>
                     <Newschimp />
