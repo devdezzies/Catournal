@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import '@suziwen/gitalk/dist/gitalk.css'
 import Gitalk from 'gatsby-plugin-gitalk'
 
-const Forum = ({ uid }) => {
+const Discussion = ({ uid }) => {
 
     let gitalkConfig = {
         id: `${uid}`,
@@ -14,11 +14,11 @@ const Forum = ({ uid }) => {
     return (
         <>
             <Helmet
-                title={`Catournal Forum`}
-                titleTemplate={`Hello, welcome to Catournal Forum`}
+                title={`Catournal Discussion`}
+                titleTemplate={`Welcome to Discussion room`}
             />
             <Layout>
-            <h1>Forum</h1>
+            <h1>Discussion</h1>
             <br/>
                 <Gitalk options={gitalkConfig} />
             </Layout>
@@ -27,4 +27,4 @@ const Forum = ({ uid }) => {
 
 }
 
-export default Forum
+export default Discussion
